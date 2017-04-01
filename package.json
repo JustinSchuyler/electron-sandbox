@@ -1,0 +1,22 @@
+{
+  "name": "electron-sandbox",
+  "version": "1.0.0",
+  "description": "[![Stories in Ready](https://badge.waffle.io/JustinSchuyler/electron-sandbox.png?label=ready&title=Ready)](https://waffle.io/JustinSchuyler/electron-sandbox) # Electron Sandbox ## Mission To learn more about Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinSchuyler/electron-sandbox.git"
+  },
+  "author": "Rob and Justin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinSchuyler/electron-sandbox/issues"
+  },
+  "homepage": "https://github.com/JustinSchuyler/electron-sandbox#readme",
+  "devDependencies": {
+    "electron": "^1.6.2"
+  }
+}
