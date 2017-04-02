@@ -1,10 +1,12 @@
 {
   "name": "electron-sandbox",
+  "productName": "Sandbox",
   "version": "1.0.0",
   "description": "[![Stories in Ready](https://badge.waffle.io/JustinSchuyler/electron-sandbox.png?label=ready&title=Ready)](https://waffle.io/JustinSchuyler/electron-sandbox) # Electron Sandbox ## Mission To learn more about Electron.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . --out build --overwrite"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/JustinSchuyler/electron-sandbox#readme",
   "devDependencies": {
-    "electron": "^1.6.2"
+    "electron": "^1.6.2",
+    "electron-packager": "^8.6.0"
   }
 }

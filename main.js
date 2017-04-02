@@ -1,17 +1,21 @@
-const {app, BrowserWindow} = require('electron');
+const {app, BrowserWindow, Menu} = require('electron');
 const path = require('path');
 const url = require('url');
 
 let win;
+const template = require('./menu');
 
 function createWindow() {
-    win = new BrowserWindow({width: 400, height: 400});
-    
+    win = new BrowserWindow({width: 800, height: 600});
+
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'file:',
         slashes: true
     }));
+
+    const menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
 
     // Opens Chrome Web Tools
     // win.webContents.openDevTools();
