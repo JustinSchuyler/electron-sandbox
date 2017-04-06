@@ -9,5 +9,10 @@
         <p>Node: <script>document.write(process.versions.node)</script></p>
         <p>Chrome: <script>document.write(process.versions.chrome)</script></p>
         <p>Electron: <script>document.write(process.versions.electron)</script></p>
+        <h1>Features</h1>
+        <p id="sample-page">Sample Page</p>
+        <p id="second-page">Second Page</p>
+        <script>require('./src/sample.renderer.js')</script>
+        <script>require('./src/second.renderer.js')</script>
     </body>
 </html>
