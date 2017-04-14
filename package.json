@@ -6,6 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "watch": "gulp serve",
     "build": "electron-packager . --out build --overwrite"
   },
   "repository": {
@@ -20,6 +21,8 @@
   "homepage": "https://github.com/JustinSchuyler/electron-sandbox#readme",
   "devDependencies": {
     "electron": "^1.6.2",
-    "electron-packager": "^8.6.0"
+    "electron-connect": "^0.6.1",
+    "electron-packager": "^8.6.0",
+    "gulp": "^3.9.1"
   }
 }
