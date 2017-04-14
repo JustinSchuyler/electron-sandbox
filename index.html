@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>  
-    <head>
-        <meta charset="UTF-8">
-        <title>Hello World</title> 
-    </head>
-    <body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="row">
+      <nav class="left-column">
+        <h2>Features</h2>
+        <ul class="features">
+          <li id="sample-page">Sample Page</li>
+          <li id="second-page">Second Page</li>
+        </ul>
+      </nav>
+      <div class="right-column">
         <h1>Hello World</h1>
         <p>Node: <script>document.write(process.versions.node)</script></p>
         <p>Chrome: <script>document.write(process.versions.chrome)</script></p>
         <p>Electron: <script>document.write(process.versions.electron)</script></p>
-        <h1>Features</h1>
-        <p id="sample-page">Sample Page</p>
-        <p id="second-page">Second Page</p>
-        <script>require('./src/sample.renderer.js')</script>
-        <script>require('./src/second.renderer.js')</script>
-    </body>
+      </div>
+    </div>
+    <script>require('./src/sample.renderer.js')</script>
+    <script>require('./src/second.renderer.js')</script>
+  </body>
 </html>
