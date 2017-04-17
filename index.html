@@ -8,7 +8,10 @@
   <body>
     <div class="row">
       <nav class="left-column">
-        <h2>Features</h2>
+        <header>
+          <h2>Features</h2>
+          <img src="assets/img/ic_menu_white_24px.svg">
+        </header>
         <ul class="features">
           <li id="sample-page">Sample Page</li>
           <li id="second-page">Second Page</li>
@@ -21,6 +24,14 @@
         <p>Electron: <script>document.write(process.versions.electron)</script></p>
       </div>
     </div>
+    <script>
+      let row = document.querySelector('.row');
+      let menuButton = row.querySelector('img');
+
+      menuButton.addEventListener('click', _ => {
+        row.classList.toggle('open');
+      });
+    </script>
     <script>require('electron-connect').client.create()</script>
     <script>require('./src/sample.renderer.js')</script>
     <script>require('./src/second.renderer.js')</script>
