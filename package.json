@@ -7,7 +7,9 @@
   "scripts": {
     "start": "electron .",
     "watch": "gulp serve",
-    "build": "electron-packager . --out build --overwrite"
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=build",
+    "build-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=build",
+    "build-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/512x512.png --prune=true --out=build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "electron": "^1.6.2",
     "electron-connect": "^0.6.1",
     "electron-packager": "^8.6.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "spectron": "^3.6.1"
   }
 }
